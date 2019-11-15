@@ -14,7 +14,7 @@ echo ; Add Verb>> readonly-context.reg
 echo [HKEY_CURRENT_USER\Software\Classes\savefile\shell\ToggleReadOnly]>> readonly-context.reg
 echo @="Toggle Read-Only">> readonly-context.reg
 echo [HKEY_CURRENT_USER\Software\Classes\savefile\shell\ToggleReadOnly\command]>> readonly-context.reg
-echo @="\"C:\\Users\\%username%\\BL3 Read-Only Toggle\\readonly.bat\" \"%1\"">> readonly-context.reg
+echo @="\"C:\\Users\\%username%\\BL3 Read-Only Toggle\\readonly.bat\" \"%%1\"">> readonly-context.reg
 echo [HKEY_CURRENT_USER\Software\Classes\savefile\shell\ToggleReadOnly]>> readonly-context.reg
 echo "Icon"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,00,\>> readonly-context.reg
 echo   5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,53,00,48,00,45,\>> readonly-context.reg

@@ -1,6 +1,5 @@
 @ECHO OFF
 SET args=%*
-
 IF NOT DEFINED args GOTO END
 
 attrib %args% | grep 'R    ' > tmpFile
@@ -9,6 +8,7 @@ del tmpFile
 
 IF "%readonly%"=="" (
 	:: Not Read-Only
+	cacls %args% /e /g %username%:f
 	attrib +r %args%
 	cacls %args% /e /d %username%
 	cacls %args% /e /g %username%:r
