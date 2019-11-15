@@ -3,6 +3,7 @@
 ### Purpose
 
 This set of scripts adds a right-click action to `.sav` (Borderlands Save Files) to toggle read-only. They do both the *Read-Only* flag, as well as properly revoke the right permissions (the new requirement for BL3).
+![image](https://user-images.githubusercontent.com/19434157/68917203-e16b0a00-072e-11ea-9908-e9cb9bcaefe2.png)
 
 ### Installation
 *Theoretically*, installation is as easy as downloading the `.zip` file, extracting it, and running `install.bat` as an administrator, and following Windows prompts - this should copy files to `C:\Users\YourUsername\BL3 Read-Only Toggle` and run the Registry Edit file. If it does not work correctly you can do these steps manually as well.
